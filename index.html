@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Be School | مدرسة البرمجة</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>Be</span> School
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#courses">الكورسات</a></li>
+            <li><a href="#about">عن المدرسة</a></li>
+            <li><a href="#teachers">المدرسين</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            🚀 مستقبلك يبدأ من هنا
+        </p>
+
+        <h1>
+            تعلم البرمجة مع
+            <span>Be School</span>
+        </h1>
+
+        <p class="hero-description">
+            مدرسة متخصصة في تعليم البرمجة وتطوير مهارات الطلاب
+            بطريقة بسيطة وعملية وممتعة.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#courses" class="btn primary">
+                اكتشف الكورسات
+            </a>
+
+            <a href="#about" class="btn secondary">
+                اعرف المزيد
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- كارت الكود -->
+
+    <div class="code-card">
+
+        <div class="code-top">
+
+            <div class="dots">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <span>Be School</span>
+
+        </div>
+
+<pre>
+<span class="purple">const</span> student = {
+
+    name: <span class="green">"Be School"</span>,
+
+    skills: [
+        <span class="green">"HTML"</span>,
+        <span class="green">"CSS"</span>,
+        <span class="green">"JavaScript"</span>
+    ],
+
+    future: <span class="green">"Developer 🚀"</span>
+};
+
+<span class="orange">startLearning</span>();
+</pre>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat">
+        <h2>1000+</h2>
+        <p>طالب</p>
+    </div>
+
+    <div class="stat">
+        <h2>20+</h2>
+        <p>كورس</p>
+    </div>
+
+    <div class="stat">
+        <h2>15+</h2>
+        <p>مدرس</p>
+    </div>
+
+    <div class="stat">
+        <h2>95%</h2>
+        <p>رضا الطلاب</p>
+    </div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="section" id="courses">
+
+    <div class="section-title">
+
+        <p>تعلم مهارات المستقبل</p>
+
+        <h2>
+            أشهر الكورسات
+        </h2>
+
+    </div>
+
+
+    <div class="courses">
+
+
+        <!-- Course 1 -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                🌐
+            </div>
+
+            <h3>
+                Web Development
+            </h3>
+
+            <p>
+                تعلم بناء مواقع الإنترنت باستخدام
+                HTML و CSS و JavaScript.
+            </p>
+
+            <span class="level">
+                مبتدئ
+            </span>
+
+            <button onclick="showMessage('Web Development')">
+                ابدأ التعلم
+            </button>
+
+        </div>
+
+
+        <!-- Course 2 -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                ⚡
+            </div>
+
+            <h3>
+                JavaScript
+            </h3>
+
+            <p>
+                تعلم JavaScript وصمم مواقع
+                تفاعلية واحترافية.
+            </p>
+
+            <span class="level">
+                متوسط
+            </span>
+
+            <button onclick="showMessage('JavaScript')">
+                ابدأ التعلم
+            </button>
+
+        </div>
+
+
+        <!-- Course 3 -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                🐍
+            </div>
+
+            <h3>
+                Python
+            </h3>
+
+            <p>
+                تعلم أساسيات Python والبرمجة
+                بطريقة سهلة وعملية.
+            </p>
+
+            <span class="level">
+                مبتدئ
+            </span>
+
+            <button onclick="showMessage('Python')">
+                ابدأ التعلم
+            </button>
+
+        </div>
+
+
+        <!-- Course 4 -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                📱
+            </div>
+
+            <h3>
+                App Development
+            </h3>
+
+            <p>
+                تعلم أساسيات تطوير تطبيقات
+                الموبايل وبناء مشاريع حقيقية.
+            </p>
+
+            <span class="level">
+                متقدم
+            </span>
+
+            <button onclick="showMessage('App Development')">
+                ابدأ التعلم
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <div class="circle">
+            💻
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="small-title">
+            من نحن؟
+        </p>
+
+        <h2>
+            نحن نصنع
+            <span>مطورين المستقبل</span>
+        </h2>
+
+        <p>
+            Be School هي مدرسة متخصصة في تعليم البرمجة،
+            وهدفنا هو مساعدة الطلاب على اكتساب المهارات
+            التقنية المطلوبة في سوق العمل.
+        </p>
+
+
+        <div class="features">
+
+            <div>
+                ✓ شرح بسيط وسهل
+            </div>
+
+            <div>
+                ✓ مشاريع عملية
+            </div>
+
+            <div>
+                ✓ مدرسين محترفين
+            </div>
+
+            <div>
+                ✓ متابعة مستمرة
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TEACHERS ================= -->
+
+<section class="section" id="teachers">
+
+    <div class="section-title">
+
+        <p>
+            فريقنا
+        </p>
+
+        <h2>
+            مدرسينا المحترفين
+        </h2>
+
+    </div>
+
+
+    <div class="teachers">
+
+
+        <div class="teacher">
+
+            <div class="teacher-avatar">
+                👨‍💻
+            </div>
+
+            <h3>
+                أحمد محمد
+            </h3>
+
+            <p>
+                Web Developer
+            </p>
+
+        </div>
+
+
+        <div class="teacher">
+
+            <div class="teacher-avatar">
+                👩‍💻
+            </div>
+
+            <h3>
+                سارة علي
+            </h3>
+
+            <p>
+                JavaScript Developer
+            </p>
+
+        </div>
+
+
+        <div class="teacher">
+
+            <div class="teacher-avatar">
+                👨‍🏫
+            </div>
+
+            <h3>
+                محمد حسن
+            </h3>
+
+            <p>
+                Python Instructor
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <p>
+            تواصل معنا
+        </p>
+
+        <h2>
+            ابدأ رحلتك البرمجية 🚀
+        </h2>
+
+    </div>
+
+
+    <form onsubmit="sendForm(event)">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="اسمك"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="البريد الإلكتروني"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="رسالتك"
+            required
+        ></textarea>
+
+        <button type="submit">
+            إرسال الرسالة
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="logo">
+        <span>Be</span> School
+    </div>
+
+    <p>
+        © 2026 Be School - جميع الحقوق محفوظة
+    </p>
+
+    <div class="social">
+
+        <a href="#">
+            Facebook
+        </a>
+
+        <a href="#">
+            Instagram
+        </a>
+
+        <a href="#">
+            YouTube
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- Notification -->
+
+<div id="notification"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
